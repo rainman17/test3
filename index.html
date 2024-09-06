@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Траты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #counter {
+            font-size: 48px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Неэффективные расходы команды observability</h1>
+    <div id="counter">$1000</div>
+
+    <script>
+        let amount = 1000;
+
+        function updateCounter() {
+            amount += 100;
+            document.getElementById('counter').innerText = `$${amount}`;
+        }
+
+        setInterval(updateCounter, 100); // обновление каждые 10 секунд
+    </script>
+
+</body>
+</html>
+
